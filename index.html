@@ -485,13 +485,13 @@
         </div>
         <div id="design" class="project-content mt-4">
             <div class="row mt-2">
-                <div class="col-md-4" data-aos="zoom-in">
+                <div class="col-md-4 mt-4" data-aos="zoom-in">
                     <img src="./assets/1.jpg" class="img-fluid rounded" alt="">
                 </div>
-                <div class="col-md-4" data-aos="zoom-in">
+                <div class="col-md-4 mt-4" data-aos="zoom-in">
                     <img src="./assets/2.jpg" class="img-fluid rounded" alt="">
                 </div>
-                <div class="col-md-4" data-aos="zoom-in">
+                <div class="col-md-4 mt-4" data-aos="zoom-in">
                     <img src="./assets/7.jpg" class="img-fluid rounded" alt="">
                 </div>
             </div>
@@ -503,10 +503,10 @@
         </div>
         <div id="mobile" class="project-content mt-4">
             <div class="row mt-2">
-                <div class="col-md-4" data-aos="zoom-in">
+                <div class="col-md-4 mt-4" data-aos="zoom-in">
                     <img src="./assets/3.jpg" class="img-fluid rounded" alt="">
                 </div>
-                <div class="col-md-4" data-aos="zoom-in">
+                <div class="col-md-4 mt-4" data-aos="zoom-in">
                     <img src="./assets/5.jpg" class="img-fluid rounded" alt="">
                 </div>
             </div>
@@ -549,8 +549,8 @@
                             <div class="col-md-10"><input type="email" name="email" class="form-control"
                                     placeholder="Your Email">
                             </div>
-                            <div class="col-md-2"><button type="submit" class="btn" style="background-color: white;"><i
-                                        class="	fas fa-arrow-right"></i></button>
+                            <div class="col-md-2"><a class="btn" href="./index.html" style="background-color: white;"><i
+                                        class="	fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </form>
@@ -585,14 +585,14 @@
                         height="60%" width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 contact">
                     <h3><u>FEEL FREE TO DROP US A LINE!</u></h3>
                     <form action="index.html" method="post" autocomplete="off">
                         <input type="text" class="form-control mt-3" placeholder="YOUR NAME" name="name">
                         <input type="eamil" class="form-control mt-4" placeholder="YOUR NAME" name="email">
                         <textarea name="message" class="form-control mt-4" placeholder="Your Message" cols="57"
                             rows="10"></textarea>
-                        <button type="submit" class="btn btn-block btn-dark mt-4">GIVE US A SHOT</button>
+                        <a class="btn btn-block btn-dark mt-4" href="./index.html">GIVE US A SHOT</a>
                     </form>
                 </div>
             </div>
@@ -651,7 +651,9 @@
 </body>
 <script>
     $(".navbar-collapse a").click(function () {
-        $(".navbar-collapse").collapse("hide");
+        var element;
+        element = document.getElementById('navbarSupportedContent');
+        element.className = element.className.replace("show", "");
     });
     AOS.init({
         duration: 1600,
