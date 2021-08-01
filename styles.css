@@ -218,7 +218,7 @@ video {
     {
         display: inline;
         color: black;
-        padding:10px;
+        padding:7px;
         margin-right: 2%;
         font-size: large;
         cursor:pointer;
@@ -299,7 +299,7 @@ video {
 
          .facts
          {
-             min-height:100%
+             min-height:152%
          }
 
          .services-main,.service-blocks
@@ -315,5 +315,10 @@ video {
         .progress
         {
         height:0.7rem;
+        }
+
+        .performance
+        {
+            min-height: 150%;
         }
     }
