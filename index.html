@@ -48,26 +48,37 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        <li class="nav-item" onclick="navchange(event,'home1')">
+                            <a class="nav-link active" id="home1" aria-current="page" href="./index.html">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About us</a>
+                        <li class="nav-item" onclick="navchange(event,'about1')">
+                            <a class="nav-link" id="about1" href="#about">About us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
+                        <li class="nav-item" onclick="navchange(event,'services1')">
+                            <a class="nav-link" id="services1" href="#services">Services</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
+                        <li class="nav-item" onclick="navchange(event,'projects1')">
+                            <a class="nav-link" id="projects1" href="#projects">Projects</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact Us</a>
+                        <li class="nav-item" onclick="navchange(event,'contact1')">
+                            <a class="nav-link" id="contact1" href="#contact">Contact Us</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <script>
+            function navchange(evt, navname) {
+                var i, tablinks;
+                tabcontent = document.getElementsByClassName("nav-link");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].className = tabcontent[i].className.replace(" active", "");
+                }
 
+                document.getElementById(navname).className += " active";
+                // evt.currentTarget.className += " active";
+            }
+        </script>
         <video autoplay muted onended="videoEnded()" id="video">
             <source src="./assets/Sunset Slow Motion Ocean Waves.mp4" type="video/mp4">e
         </video>
