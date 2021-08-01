@@ -2,6 +2,11 @@
   box-sizing: border-box;
 font-family: 'Raleway', sans-serif;
 }
+
+::selection {
+  background: crimson;
+  color: white;
+}
 html,body {
     scroll-behavior: smooth;
     overflow-x:hidden;
@@ -116,7 +121,8 @@ video {
         background-image: linear-gradient(to right, rgba(58, 57, 57, 0.3), rgba(43, 41, 42, 0.3)),url("./assets/fun-fact.jpg");
         background-size: cover;
         width:100%;
-min-height: 80%;    }
+        min-height: 80%;
+    }
 
     .facts-content
     {
@@ -166,6 +172,39 @@ min-height: 80%;    }
         height:auto;
         width:80px;
     }
+
+
+     .performance
+    {
+        background-image: linear-gradient(to right, rgba(8, 8, 8, 0.6), rgba(15, 15, 15, 0.5)),url("./assets/performance-bg.jpg");
+        background-size: cover;
+        width:100%;
+        min-height: 70%;
+    }
+    small
+    {
+        color:white;
+        text-align:left;
+    }
+    .progress
+    {
+        height:0.4rem;
+    }
+
+    .tabs
+    {
+        display: inline;
+        color: white;
+        padding:20px;
+        font-size: large;
+        cursor:pointer;
+    }
+    .tab-content
+    {
+        display: none;
+        color: white;
+    }
+
     @media only screen and (max-width: 768px)
     {
         .nav-color {

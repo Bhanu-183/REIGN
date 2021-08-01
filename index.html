@@ -201,7 +201,7 @@
     </div>
 
     <div class="container-fluid mt-5" id="services">
-        <div>
+        <div data-aos="fade-up">
             <h1 class="text-center">OUR SERVICES</h1>
             <p class="text-center">WE PLAN, DESIGN, BUILD AND MARKET HIGH QUALITY PRODUCTS</p>
         </div>
@@ -274,9 +274,100 @@
                 </div>
             </div>
         </div>
-
     </div>
 
+
+    <div class="container-fluid mt-5 performance ">
+        <div data-aos="fade-up" class="container facts-content">
+            <h1 class=" text-center">OUR PERFORMANCE</h1>
+            <p class="text-center">BE SURPRISED SEEING THE FINAL OUTCOME WITH US.
+            </p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="margin-top:25%">
+                    <div>
+                        <small>GOOGLE PAGE SPEED</small>
+                        <div class="progress">
+
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 90%;"
+                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                90%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <small>Pingdom Page Speed</small>
+                        <div class="progress">
+
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 70%;"
+                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                70%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <small>Reign Performance Matrix</small>
+                        <div class="progress">
+
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 87%;"
+                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                87%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <small>Customer Satisfaction</small>
+                        <div class="progress">
+
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 95%;"
+                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                95%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <ul>
+                        <li class="tabs" onclick="openTab(event,'ui')">UX/UI</li>
+                        <li class="tabs" onclick="openTab(event,'support')">SUPPORT</li>
+                        <li class="tabs" onclick="openTab(event,'seo')">SEO</li>
+                    </ul>
+                    <div id="ui" class="tab-content">
+                        Reign is a team of multidisciplinary digital product experts. We extend the design and
+                        development departments of the
+                        most innovative companies. Our studio is small, working with a few client projects at a time.
+                    </div>
+                    <div id="support" class="tab-content">
+                        Our friendly Support Team is available to help you 24 hours a day, seven days a week. We look
+                        forward to hearing from
+                        you! Our 24/7 support team is available to assist you with your any online presence needs.
+                    </div>
+                    <div id="seo" class="tab-content">
+                        SEO is essential for every website for a long time business and marketing. We generally work on
+                        three keywords for SEO
+                        and charge a small amount. Usually, it will take 3-6 month for upgrading website search rank.
+                    </div>
+                </div>
+                <script>
+                    function openTab(evt, tabName) {
+                        var i, tabcontent, tablinks;
+                        tabcontent = document.getElementsByClassName("tab-content");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+                        tablinks = document.getElementsByClassName("tabs");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+                        document.getElementById(tabName).style.display = "block";
+                        // evt.currentTarget.className += " active";
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
 </body>
 <script>
     $(".navbar-collapse a").click(function () {
