@@ -542,7 +542,7 @@
                 </div>
                 <div class="vl" style="margin-top: 20%;"></div>
                 <div class="col-md-7" style="margin-top: 22%;">
-                    <form action="newsletter.php" method="post">
+                    <form action="" method="post">
                         <div class="row">
                             <div class="col-md-10"><input type="email" name="email" class="form-control"
                                     placeholder="Your Email">
