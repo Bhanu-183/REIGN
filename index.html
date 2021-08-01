@@ -179,14 +179,14 @@
                 <div class="col-md-2"></div>
                 <div class="col-md-1 mt-4">
                     <img src="./assets/download.svg" alt="" class="img-big">
-                    <h1 class="downloads">77819</h1>
+                    <h1 class="downloads digits">77819</h1>
                     <p>Total Downloads</p>
 
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-1 mt-4" style="margin-left:3%">
                     <img src="./assets/clock.svg" class="img-big" alt="">
-                    <h1 class="minutes">37074</h1>
+                    <h1 class="minutes digits">37074</h1>
                     <p>MINUTES WELL SPENT</p>
 
                 </div>
@@ -194,7 +194,7 @@
 
                 <div class="col-md-1 mt-4">
                     <img src="./assets/battery.svg" class="img-big" alt="">
-                    <h1 class="coffees">12599</h1>
+                    <h1 class="coffees digits">12599</h1>
                     <p>COFFEES CONSUMED</p>
 
                 </div>
@@ -290,7 +290,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-6" style="margin-top:25%">
+                <div class="col-md-6 left-block">
                     <div>
                         <small>GOOGLE PAGE SPEED</small>
                         <div class="progress">
@@ -333,43 +333,213 @@
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <ul>
-                        <li class="tabs" onclick="openTab(event,'ui')">UX/UI</li>
+                <div class="col-md-6 right-block">
+                    <ul class="mt-4">
+                        <li class="tabs active" onclick="openTab(event,'ui')">UX/UI</li>
                         <li class="tabs" onclick="openTab(event,'support')">SUPPORT</li>
                         <li class="tabs" onclick="openTab(event,'seo')">SEO</li>
                     </ul>
-                    <div id="ui" class="tab-content">
-                        Reign is a team of multidisciplinary digital product experts. We extend the design and
-                        development departments of the
-                        most innovative companies. Our studio is small, working with a few client projects at a time.
+                    <div id="ui" class="tab-content mt-4" style="display: block;">
+                        <div class="row">
+                            <div class="col-md-2"><img src="./assets/diamond.svg"
+                                    style="width: 80px;margin-left: auto;margin-right: auto;display: block;" alt="">
+                            </div>
+                            <div class="col-md-10">
+                                <p>
+                                    Reign is a team of multidisciplinary digital product experts. We extend the design
+                                    and
+                                    development departments of the
+                                    most innovative companies. Our studio is small, working with a few client projects
+                                    at a time.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div id="support" class="tab-content">
-                        Our friendly Support Team is available to help you 24 hours a day, seven days a week. We look
-                        forward to hearing from
-                        you! Our 24/7 support team is available to assist you with your any online presence needs.
+                    <div id="support" class="tab-content mt-5">
+                        <div class="row">
+                            <div class="col-md-2"><img src="./assets/customer-service.svg"
+                                    style="width: 80px;margin-left: auto;margin-right: auto;display: block;" alt="">
+                            </div>
+                            <div class="col-md-10">
+                                <p>
+                                    Our friendly Support Team is available to help you 24 hours a day, seven days a
+                                    week. We
+                                    look
+                                    forward to hearing from
+                                    you! Our 24/7 support team is available to assist you with your any online presence
+                                    needs.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div id="seo" class="tab-content">
-                        SEO is essential for every website for a long time business and marketing. We generally work on
-                        three keywords for SEO
-                        and charge a small amount. Usually, it will take 3-6 month for upgrading website search rank.
+                    <div id="seo" class="tab-content mt-5">
+                        <div class="row">
+                            <div class="col-md-2"><img src="./assets/monitor-3.svg"
+                                    style="width: 80px;margin-left: auto;margin-right: auto;display: block;" alt="">
+                            </div>
+                            <div class="col-md-10">
+                                <p>
+                                    SEO is essential for every website for a long time business and marketing. We
+                                    generally work on
+                                    three keywords for SEO
+                                    and charge a small amount. Usually, it will take 3-6 month for upgrading website
+                                    search rank.
+                                </p>
+                            </div>
+                        </div>
                     </div>
+                    <script>
+                        function openTab(evt, tabName) {
+                            var i, tabcontent, tablinks;
+                            tabcontent = document.getElementsByClassName("tab-content");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+                            tablinks = document.getElementsByClassName("tabs");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                            }
+                            document.getElementById(tabName).style.display = "block";
+                            evt.currentTarget.className += " active";
+                        }
+                    </script>
+                    <a href="#projects" class="link-btn">OUR LATEEST WORKS</a>
                 </div>
-                <script>
-                    function openTab(evt, tabName) {
-                        var i, tabcontent, tablinks;
-                        tabcontent = document.getElementsByClassName("tab-content");
-                        for (i = 0; i < tabcontent.length; i++) {
-                            tabcontent[i].style.display = "none";
-                        }
-                        tablinks = document.getElementsByClassName("tabs");
-                        for (i = 0; i < tablinks.length; i++) {
-                            tablinks[i].className = tablinks[i].className.replace(" active", "");
-                        }
-                        document.getElementById(tabName).style.display = "block";
-                        // evt.currentTarget.className += " active";
-                    }
-                </script>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5" id="projects">
+        <div data-aos="fade-up">
+            <h1 class="text-center">RECENT PROJECTS</h1>
+            <p class="text-center">SUCCESSFUL PROJECTS, HAPPY CLIENTS, GREAT RESULTS</p>
+        </div>
+        <div class="container text-center mt-4">
+            <ul>
+                <li class="project-tabs clicked mt-3" onclick="openProject(event,'all')">ALL</li>
+                <li class="project-tabs mt-3" onclick="openProject(event,'photography')">PHOTOGRAPHY</li>
+                <li class="project-tabs mt-3" onclick="openProject(event,'design')">DESIGN</li>
+                <li class="project-tabs mt-3" onclick="openProject(event,'mobile')">MOBILE</li>
+                <li class="project-tabs mt-3" onclick="openProject(event,'market')">MARKETING</li>
+            </ul>
+        </div>
+        <div id="all" class="project-content mt-4" style="display: block;">
+            <div class="row mt-2">
+                <div class="col-md-4" data-aos="zoom-in">
+                    <img src="./assets/1.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <img src="./assets/2.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <img src="./assets/3.jpg" class="img-fluid rounded" alt="">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4" data-aos="zoom-in">
+                    <img src="./assets/4.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <img src="./assets/5.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <img src="./assets/6.jpg" class="img-fluid rounded" alt="">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4" data-aos="zoom-in">
+                    <img src="./assets/7.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <img src="./assets/8.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <img src="./assets/9.jpg" class="img-fluid rounded" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="photography" class="project-content mt-4">
+            <div class="row mt-2">
+                <div class="col-md-4" data-aos="zoom-in">
+                    <img src="./assets/4.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <img src="./assets/8.jpg" class="img-fluid rounded" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div id="design" class="project-content mt-4">
+            <div class="row mt-2">
+                <div class="col-md-4" data-aos="zoom-in">
+                    <img src="./assets/1.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <img src="./assets/2.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <img src="./assets/7.jpg" class="img-fluid rounded" alt="">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4" data-aos="zoom-in">
+                    <img src="./assets/9.jpg" class="img-fluid rounded" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="mobile" class="project-content mt-4">
+            <div class="row mt-2">
+                <div class="col-md-4" data-aos="zoom-in">
+                    <img src="./assets/3.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <img src="./assets/5.jpg" class="img-fluid rounded" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="market" class="project-content mt-4">
+            <div class="row mt-2">
+                <div class="col-md-4" data-aos="zoom-in">
+                    <img src="./assets/6.jpg" class="img-fluid rounded" alt="">
+                </div>
+            </div>
+        </div>
+        <script>
+            function openProject(evt, tabName) {
+                var i, projectcontent, tablinks;
+                projectcontent = document.getElementsByClassName("project-content");
+                for (i = 0; i < projectcontent.length; i++) {
+                    projectcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("project-tabs");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" clicked", "");
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " clicked";
+            }
+        </script>
+    </div>
+
+    <div class="container-fluid newsletter mt-5">
+        <div class="container">
+            <div class="row" style="margin-top:23%">
+                <div class="col-md-4" style="color:white;text-align:right">
+                    <h1>SUBSCRIBE</h1>
+                    <p>To join our newsletter</p>
+                </div>
+                <div class="vl"></div>
+                <div class="col-md-7 mt-3">
+                    <form action="" method="post">
+                        <div class="row">
+                            <div class="col-md-10"><input type="email" class="form-control" placeholder="Your Email">
+                            </div>
+                            <div class="col-md-2"><button type="submit" class="btn" style="background-color: white;"><i
+                                        class="	fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

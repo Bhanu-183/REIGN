@@ -78,6 +78,7 @@ video {
     {
         color:black;
         background-color:white;
+        text-decoration: none;
     }
 
     .arrow a
@@ -179,7 +180,7 @@ video {
         background-image: linear-gradient(to right, rgba(8, 8, 8, 0.6), rgba(15, 15, 15, 0.5)),url("./assets/performance-bg.jpg");
         background-size: cover;
         width:100%;
-        min-height: 70%;
+        min-height: 85%;
     }
     small
     {
@@ -188,14 +189,17 @@ video {
     }
     .progress
     {
-        height:0.4rem;
+        height:0.7rem;
     }
-
+    .digits
+    {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
     .tabs
     {
         display: inline;
         color: white;
-        padding:20px;
+        padding:5px;
         font-size: large;
         cursor:pointer;
     }
@@ -204,9 +208,62 @@ video {
         display: none;
         color: white;
     }
+   
+    .left-block,.right-block
+    {
+        margin-top:25%;
+    }
 
+    .project-tabs
+    {
+        display: inline;
+        color: black;
+        padding:10px;
+        margin-right: 2%;
+        font-size: large;
+        cursor:pointer;
+    }
+
+    .clicked
+    {
+        border:1px solid black;
+        border-radius: 5px;
+    }
+     .active
+    {
+        border:1px solid white;
+        border-radius: 5px;
+    }
+
+    .project-content
+    {
+        display:none;
+    }
+
+    .newsletter
+    {
+        background-image: url('./assets/newsletter-bg.jpg');
+        background-position: 63% 26%;
+        height: 100%;
+        position:absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+.vl {
+  border-left: 2px solid white;
+  height: 70px;
+}
     @media only screen and (max-width: 768px)
     {
+        .vl
+        {
+            display: none;
+        }
+        .newsletter
+        {
+            display: none;
+        }
         .nav-color {
         margin-left: 5%;    
         }
@@ -247,8 +304,16 @@ video {
 
          .services-main,.service-blocks
 
-    {
+        {
         margin-left: 0;
         margin-right:0;
-    }
+        }
+        .left-block
+        {
+            margin-top:75%;
+        }
+        .progress
+        {
+        height:0.7rem;
+        }
     }
