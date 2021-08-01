@@ -244,15 +244,14 @@ video {
     {
         background-image: url('./assets/newsletter-bg.jpg');
         background-position: 63% 26%;
-        height: 100%;
-        position:absolute;
+        height: 80%;
         background-size: contain;
         background-repeat: no-repeat;
         width: 100%;
     }
 .vl {
   border-left: 2px solid white;
-  height: 70px;
+  height: 75px;
 }
     @media only screen and (max-width: 768px)
     {
