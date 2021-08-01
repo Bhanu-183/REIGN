@@ -337,4 +337,9 @@ footer a:hover
         {
             margin-top:35%;
         }
+
+        .display-4
+        {
+            margin-left: -30px;
+        }
     }
