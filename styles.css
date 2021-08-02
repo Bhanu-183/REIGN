@@ -23,6 +23,11 @@ video {
         object-fit: fill;
     }
 
+    .nav-item:hover
+    {   
+        transition: all 0.7s;
+        transform: scale(1.05);
+    }
     .bg {
         height: 100%;
         width: 100%;
@@ -276,12 +281,19 @@ footer a:hover
     margin: 0 auto;
 	left: 0;
     right: 0;
-    width: 15%;
+    width: 12%;
 }
 
 .white::after
 {
     background-color: white;
+}
+
+.underline:hover:after
+{
+    transition: all 0.6s;
+    background-color:crimson;
+    width:15%
 }
     @media only screen and (max-width: 768px)
     {
